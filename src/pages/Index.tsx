@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Icon from "@/components/ui/icon";
+import TournamentMap from "@/components/TournamentMap";
 
 const CS2HomePage = () => {
   const topPlayers = [
@@ -274,6 +275,14 @@ const CS2HomePage = () => {
           </TabsContent>
         </Tabs>
       </div>
+
+      {/* Tournament Map Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-cs2-orange">Карта турниров мира</h2>
+          <TournamentMap />
+        </div>
+      </section>
 
       {/* News Section */}
       <section className="bg-cs2-gray py-16">
